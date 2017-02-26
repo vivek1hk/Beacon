@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <title>beacon-440ca</title>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/ng-dialog/0.1.6/ng-dialog.min.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/ng-dialog/0.1.6/ng-dialog-theme-plain.min.css" />
+  <link data-require="bootstrap-css@*" data-semver="3.3.1" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script data-require="angular.js@1.2.x" src="https://code.angularjs.org/1.2.21/angular.js" data-semver="1.2.21"></script>
+  <script data-require="firebase-simple-login@1.6.2" data-semver="1.6.2" src="https://cdn.firebase.com/js/simple-login/1.6.2/firebase-simple-login.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ng-dialog/0.1.6/ng-dialog.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular-resource.js"></script>
+  <script src="https://code.angularjs.org/1.5.0/angular-animate.min.js"></script>
+  <script src="https://code.angularjs.org/1.5.0/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.5/angular-material.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.5/angular-material.min.css" />
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
+	<link href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet' />
+  <link rel="stylesheet/less" type="text/css" href="less/custom.less">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+
+	<script type="text/javascript" src="js/less.js"></script>
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
+
+  <script type="text/javascript" src="js/firebase.js"></script>
+	<script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>New Age - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="vendor/device-mockups/device-mockups.min.css">
+
+    <!-- Theme CSS -->
+    <link href="css/new-age.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    [ng\:cloak],
+    [ng-cloak],
+    .ng-cloak {
+      display: none;
+    }
+    .box{
+      background: #D3D3D3;
+      float: left;
+      width: 30%;
+      height: 40%;
+      padding: 10%;
+      margin: 1.6%;
+    }
+    .button{
+      background: #D3D3D3;
+      width: 96%;
+      height: 1%;
+    }
+
+        /* Styles go here */
+
+    .my-custom-stars .button .material-icons {
+      font-size: 50px;
+    }
+
+    .my-custom-stars .star-button.star-on .material-icons {
+      color: #003399;
+    }
+
+    .my-custom-stars .star-button.star-off .material-icons {
+      color: #99ccff;
+    }
+  </style>
+</head>
+
+<body id="page-top" style="right: 30px;">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header" style="padding-right: 30px;">
+                <img class="logo" src="img/logo_black.png"/>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"></img></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#download">Download</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#features">Features</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+
+
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7">
+
+                  <h1><label class="control-label">Tip</label></h1><hr>
+                  <div class="container" ng-app="app" ng-controller="appController">
+                  <div style="color: black;">
+                    <h2>{{billTotal}}</h2>
+
+                      <div>
+
+
+                          <div star-rating rating="starRating3" click="click3(param)" mouse-hover="mouseHover3(param)" mouse-leave="mouseLeave3(param)"></div>
+                          <div> <span class="label label-primary">Star Rating: {{starRating3}}</span>
+               <span class="label label-primary">Hover Rating: {{hoverRating3}}</span>
+                           <div id="red-wrapper">
+                            <button class="box" ng-click="percentage(15)">
+                              <center>
+                              <h2>15%</h2>
+                              {{fifteenPer}}
+                              </center>
+                            </button>
+                            <button class="box" ng-click="percentage(20)">
+                              <center>
+                              <h2>20%</h2>
+                              {{twentyPer}}
+                              </center>
+                            </button>
+                            <button class="box" ng-click="percentage(25)">
+                              <center>
+                              <h2>25%</h2>
+                              {{twentyFivePer}}
+                              </center>
+                            </button>
+                          </div>
+
+                          <!--<input class="button" ng-model="customTip" type="text" placeholder="Enter the Custom Tip" />-->
+                          <button class="button" ng-onClick="noTip()" >No Tip</button>
+                           <hr>
+
+                            <h3>Bill : {{billTotal}}</h3>
+                            <h3>Tip : {{tip}}</h3>
+                            <h3> Pay {{Total}}</h3>
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </header>
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/plot.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/new-age.min.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+
+</html>
